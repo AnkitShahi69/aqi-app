@@ -341,6 +341,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.ensemble import HistGradientBoostingClassifier
 
 
 # In[ ]:
@@ -363,6 +364,7 @@ X_train2, X_test2, Y_train2, Y_test2 = train_test_split(X2, Y2, test_size=0.33, 
 # In[ ]:
 
 
+HGBC = HistGradientBoostingClassifier().fit(X_train2, Y_train2)
 #fit the model on train data 
 log_reg = LogisticRegression().fit(X_train2, Y_train2)
 
