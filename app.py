@@ -4,7 +4,7 @@ import pickle
 
 # Create flask app
 app = Flask(__name__)
-model = pickle.load(open("HGBC.pkl", "rb"))
+model = pickle.load(open("aqi-model.pkl", "rb"))
 
 @app.route("/")
 def Home():
